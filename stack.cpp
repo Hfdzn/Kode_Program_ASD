@@ -62,5 +62,9 @@ int main() {
     cout << "Urutan stack: " << endl;
     DisplayStack(&urutanPrioritas);
 
+    // contoh penggunaan prosedur Pop
+    Pop(&urutanPrioritas, &ambil);
+    cout << "Data yang diambil: " << ambil << endl;
+
     return 0;
 }
