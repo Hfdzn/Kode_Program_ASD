@@ -1,3 +1,6 @@
+# My Wife :3
+<img width="332" height="332" alt="Hitori" src="https://github.com/user-attachments/assets/a7abab36-cdd9-4766-ab3a-4324aae8f314" />
+
 # Website Acuan
 https://algoritma-struktur-data.fdz.web.id/materi/cpp
 
