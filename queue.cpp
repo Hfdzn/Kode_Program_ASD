@@ -51,12 +51,12 @@ void Enqueue(Queue *Q, int x) {
     Q->Data[Q->TAIL] = x;
 }
 
-void Dequeue(Queue *Q, int *hapus) {
+void Dequeue(Queue *Q) {
     if (isEmpty(Q)) {
         cout << "Queue Kosong!" << endl;
         return;
     } else {
-        *hapus = Q->Data[Q->HEAD];
+        Q->Data[Q->HEAD] = 0;
         if (Q->HEAD == Q->TAIL) {
             Q->HEAD = Nil;
             Q->TAIL = Nil;
@@ -95,6 +95,10 @@ int main() {
         Enqueue(&urutanPrioritas, i);
     }
 
+    DisplayQueue(&urutanPrioritas);
+
+    Dequeue(&urutanPrioritas);
+    cout << "\nSetelah Dequueu!" << endl;
     DisplayQueue(&urutanPrioritas);
 
     return 0;
